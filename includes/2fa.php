@@ -16,7 +16,7 @@ function send2FA($email, $code) {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('denniskyalo67@outlook.com', 'Your App');
+        $mail->setFrom('denniskyalo67@outlook.com', 'IAP-2FA');
         $mail->addAddress($email);
 
         $mail->isHTML(true);
