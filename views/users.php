@@ -4,7 +4,7 @@ require_once '../classes/database.php';
 if (isset($_GET['status'])) {
     if ($_GET['status'] === 'success') {
         $message = "User registered successfully.";
-    } elseif ($_GET['status'] === 'failed') {
+    } else{
         $message = "Failed to register user.";
     }
     echo "<script>alert('$message');</script>";
